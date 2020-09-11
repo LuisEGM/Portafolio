@@ -51,6 +51,27 @@ p{
     color: crimson;
 }
 
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    border-radius: 3px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+}
+
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+
+
 
 
 
@@ -124,27 +145,6 @@ p{
 }
 #hero h1:nth-child(3) span{
     animation-delay: 2.5s;
-}
-
-
-#hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    border-radius: 3px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease background-color;
-    transition-property: background-color, color;
-}
-
-#hero .cta:hover{
-    color: white;
-    background-color: crimson;
 }
 
 /* End Hero section */
@@ -310,9 +310,74 @@ p{
     transform: scale(1.1);
 }
 
-
-
 /* End Projects section */
+
+
+
+
+
+/* About section */
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left{
+    width: 250px;
+    height: 360px;    
+}
+
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+
+}
+
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+#about .col-left .about-img{
+    position: relative;
+    border: 5px solid white;
+    height: 100%;
+    width: 100%;
+}
+
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 3px solid crimson;
+    z-index: -1;
+}
+
+
+
+
+
+/* End About section */
+
 
 
 
