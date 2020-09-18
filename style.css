@@ -371,16 +371,16 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    /* background-image: linear-gradient(60deg, #29323c 0%,#485563 100%); */
     background-image: linear-gradient(60deg, #030303 0%,#5e5e5e 100%);
     opacity: .8;
     z-index: -1;
 }
 
-#services .service-bottom .icon{
+#services .service-bottom .icon img{
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
+    border-radius: 55%;
 }
 
 #services .service-item h2{
@@ -393,6 +393,12 @@ p{
 #services .service-item p{
     color: white;
     text-align: left;
+}
+
+#services .service-item .fz-menor{
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 /* End services section */
