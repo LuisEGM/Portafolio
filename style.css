@@ -461,6 +461,7 @@ p{
 }
 
 #projects .projects-info h2{
+    color: crimson;
     font-size: 2rem;
     font-weight: 500;
     margin-top: 10px;    
@@ -472,7 +473,7 @@ p{
 
 #projects .projects-buttons{
 
-    border:1px solid aqua;
+    /* border:1px solid aqua; */
     width: 100%;
     /* height: ; */
     padding: 0;
@@ -482,15 +483,20 @@ p{
 
 }
 #projects .projects-buttons .projects-button{
-    background: chartreuse;
+    border:2px solid white;
+    background: transparent;
     margin: 1rem;
-    padding: 1rem 3rem;
-    border-radius: 15px;
+    padding: .5rem 1rem;
+    border-radius: 8px;
     display: flex;
 }
-
+#projects .projects-buttons .projects-button:hover {
+    background: crimson;
+}
 #projects .projects-buttons .projects-button p{
     font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
     display: flex;
     align-items: center;
     margin: 0 0 0 5px;
@@ -499,6 +505,8 @@ p{
 #projects .projects-buttons .projects-button img{
     width: 30px;
     height: 30px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 #projects .projects-img{
