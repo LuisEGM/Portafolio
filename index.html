@@ -1,293 +1,456 @@
 <!DOCTYPE html>
 <html lang="es-co">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" href="./images/web-hook.svg" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <title>Bienvenido</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/web-hook.svg" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bienvenido</title>
+  </head>
+  <body>
+    <!-- header -->
 
-        <!-- header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>L</span>uis <span>G</span>amez</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Services">Servicios</a></li>
+              <li><a href="#projects" data-after="Projects">Proyectos</a></li>
+              <li><a href="#about" data-after="About">Sobre mi</a></li>
+              <li><a href="#contact" data-after="Contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="header">
-            <div class="header container">
-                <div class="nav-bar">
-                    <div class="brand">
-                        <a href="#hero">
-                            <h1><span>L</span>uis <span>G</span>amez</h1>
-                        </a>
-                    </div>
-                    <div class="nav-list">
-                        <div class="hamburger"><div class="bar"></div></div>
-                        <ul>
-                            <li><a href="#hero" data-after="Home">Home</a></li>
-                            <li><a href="#services" data-after="Services">Servicios</a></li>
-                            <li><a href="#projects" data-after="Projects">Proyectos</a></li>
-                            <li><a href="#about" data-after="About">Sobre mi</a></li>
-                            <li><a href="#contact" data-after="Contact">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- And header -->
+
+    <!-- hero section -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hola a todos...!<span></span></h1>
+          <h1>Soy Luis, un<span></span></h1>
+          <h1>Frontend developer<span></span></h1>
+          <a href="#services" type="button" class="cta">Servicios</a>
+        </div>
+      </div>
+    </section>
+    <!-- end hero section  -->
+
+    <!-- Projects section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Pro<span>y</span>ectos</h1>
+        </div>
+        <div class="all-projects">
+          <div class="projects-item">
+            <div class="projects-info">
+              <h1>Proyecto 1</h1>
+              <h2>Simulador de una maquina de turing</h2>
+              <p>
+                En este proyecto se utiliza el concepto de maquina de Turing
+                para apreciar el proceso que realiza un automata de manera
+                gráfica, en este proyecto se utilizo tambien react, se
+                implemento una libreria para graficar los nodos, otra libreria
+                para agregar la cadena de la parte inferior que de hecho no fue
+                facil integralos con react pero al final se logro y este fue el
+                resultado.
+              </p>
+              <div class="projects-buttons">
+                <a
+                  target="_blank"
+                  href="https://simulador-maquinadeturing.web.app/"
+                  class="projects-button"
+                >
+                  <img
+                    src="https://img.icons8.com/material-sharp/96/000000/visible.png"
+                  />
+                  <p>Proyecto</p>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/joralsiz95/maquinaTuring"
+                  class="projects-button"
+                >
+                  <img
+                    src="https://img.icons8.com/fluent-systems-filled/96/000000/github.png"
+                  />
+                  <p>Código</p>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <!-- And header -->
-
-        <!-- hero section -->
-        <section id="hero">
-            <div class="hero container">
-                <div>
-                    <h1>Hola a todos...!<span></span></h1>
-                    <h1>Soy Luis, un<span></span></h1>
-                    <h1>Frontend developer<span></span></h1>
-                    <a href="#services" type="button" class="cta">Servicios</a>
-                </div>
+            <div class="projects-img">
+              <img src="./images/screenProyect2.png" alt="img_p2" />
             </div>
-        </section>
-        <!-- end hero section  -->
+          </div>
 
+          <div class="projects-item">
+            <div class="projects-info">
+              <h1>Proyecto 2</h1>
+              <h2>Teoria de los lenguajes formales</h2>
+              <p>
+                En general la parte teorica de lo que debe hacer esta página es
+                un tanto tediosa, lo que resalto del proyecto es en lo que esta
+                construido a pesar de verse basico fue contruido usando react,
+                apoyado de react-router para la barra de navegación y ademas
+                implementando redux para tener en el store todo lo que entraba
+                por formularios en cualquiera de las tres pestañas.(Aun no es
+                responsive)
+              </p>
+              <div class="projects-buttons">
+                <a
+                  target="_blank"
+                  href="https://tlenguajesformales-1ca5b.web.app/"
+                  class="projects-button"
+                >
+                  <img
+                    src="https://img.icons8.com/material-sharp/96/000000/visible.png"
+                  />
+                  <p>Proyecto</p>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/LuisEGM/TLenguajesFormales"
+                  class="projects-button"
+                >
+                  <img
+                    src="https://img.icons8.com/fluent-systems-filled/96/000000/github.png"
+                  />
+                  <p>Código</p>
+                </a>
+              </div>
+            </div>
+            <div class="projects-img">
+              <img src="./images/screenProyect1.png" alt="img_p1" />
+            </div>
+          </div>
 
-        <!-- Projects section -->
-        <section id="projects">
-            <div class="projects container">
-                <div class="projects-header">
-                    <h1 class="section-title">
-                        Pro<span>y</span>ectos
-                    </h1>
-                </div>
-                <div class="all-projects">
-                    <div class="projects-item">
-                        <div class="projects-info">
-                            <h1>Proyecto 1</h1>
-                            <h2>Simulador de una maquina de turing</h2>
-                            <p>En este proyecto se utiliza el concepto de maquina de Turing para apreciar el proceso que realiza un automata de manera gráfica, en este proyecto se utilizo tambien react, se implemento una libreria para graficar los nodos, otra libreria para agregar la cadena de la parte inferior que de hecho no fue facil integralos con react pero al final se logro y este fue el resultado.</p>
-                            <div class="projects-buttons" >
-                               <a target="_blank" href="https://simulador-maquinadeturing.web.app/" class="projects-button">
-                                   <img src="https://img.icons8.com/material-sharp/96/000000/visible.png">
-                                   <p>Proyecto</p>
-                               </a>
-                               <a target="_blank" href="https://github.com/joralsiz95/maquinaTuring" class="projects-button">
-                                   <img src="https://img.icons8.com/fluent-systems-filled/96/000000/github.png"/>
-                                   <p>Código</p>
-                               </a>
-                            </div>
-                           </div>
-                        <div class="projects-img">
-                           <img src="./images/screenProyect2.png" alt="img_p2">
-                        </div>
-                    </div>
-
-                    <div class="projects-item">
-                         <div class="projects-info">
-                             <h1>Proyecto 2</h1>
-                             <h2>Teoria de los lenguajes formales</h2>
-                             <p>En general la parte teorica de lo que debe hacer esta página es un tanto tediosa, lo que resalto del proyecto es en lo que esta construido a pesar de verse basico fue contruido usando react, apoyado de react-router para la barra de navegación y ademas implementando redux para tener en el store todo lo que entraba por formularios en cualquiera de las tres pestañas.(Aun no es responsive)</p>
-                             <div class="projects-buttons" >
-                                <a target="_blank" href="https://tlenguajesformales-1ca5b.web.app/" class="projects-button">
-                                    <img src="https://img.icons8.com/material-sharp/96/000000/visible.png">
-                                    <p>Proyecto</p>
-                                </a>
-                                <a target="_blank" href="https://github.com/LuisEGM/TLenguajesFormales" class="projects-button">
-                                    <img src="https://img.icons8.com/fluent-systems-filled/96/000000/github.png"/>
-                                    <p>Código</p>
-                                </a>
-                             </div>
-                         </div>
-                         <div class="projects-img">
-                            <img src="./images/screenProyect1.png" alt="img_p1">
-                         </div>
-                    </div>
-
-                    <div class="projects-item">
-                         <div class="projects-info">
-                             <h1>Proyecto 3</h1>
-                             <h2>API en Node</h2>
-                             <p>No me enfonoco unicamente en front-end, pues pasado un tiempo tambien aprendi a desarrollar Apis y conexiones de clientes "react" a las mismas, en este caso esta API esta desarrollada con typescript en node, utiliza una base de datos relacional de sqlserver,no tiene la complejidad de jwt y autenticación pues se le agregaran con el tiempo.</p>
-                             <div class="projects-buttons" >
-                                <!-- <a href="http://" class="projects-button">
+          <div class="projects-item">
+            <div class="projects-info">
+              <h1>Proyecto 3</h1>
+              <h2>API en Node</h2>
+              <p>
+                No me enfonoco unicamente en front-end, pues pasado un tiempo
+                tambien aprendi a desarrollar Apis y conexiones de clientes
+                "react" a las mismas, en este caso esta API esta desarrollada
+                con typescript en node, utiliza una base de datos relacional de
+                sqlserver,no tiene la complejidad de jwt y autenticación pues se
+                le agregaran con el tiempo.
+              </p>
+              <div class="projects-buttons">
+                <!-- <a href="http://" class="projects-button">
                                     <img src="https://img.icons8.com/material-sharp/96/000000/visible.png">
                                     <p>Proyecto</p>
                                 </a> -->
-                                <a href="https://github.com/LuisEGM/API-HambuerguesasElEstablo" class="projects-button">
-                                    <img src="https://img.icons8.com/fluent-systems-filled/96/000000/github.png"/>
-                                    <p>Código</p>
-                                </a>
-                             </div>
-                         </div>
-                         <div class="projects-img">
-                            <img src="./images/screenProyecto3.png" alt="img_p3">
-                         </div>
-                    </div>
-                </div>
+                <a
+                  href="https://github.com/LuisEGM/API-HambuerguesasElEstablo"
+                  class="projects-button"
+                >
+                  <img
+                    src="https://img.icons8.com/fluent-systems-filled/96/000000/github.png"
+                  />
+                  <p>Código</p>
+                </a>
+              </div>
             </div>
-        </section>
-        <!-- End Projects section -->
-
-
-        <!-- service section -->
-        <section id="services">
-            <div class="services container">
-                <div class="service-top">
-                    <h1 class="section-title">Serv<span>i</span>cios</h1>
-                    <p>Los servicios que puedo ofrecer son más que todo enfocados al front-end especialmente en el uso de react como libreria, pero también con conocimiento en creación de APIs y conexion con las mismas, me considero de nivel Junior hasta la fecha no cuento experiencia alguna, pero con toda la motivación y el empeño de aprender en el menor tiempo lo que me soliciten, a continuación listare los servicios o conocimientos con los que cuento (El stack con el que tengo afinidad y complementos):</p>
-                </div>
-                <div class="service-bottom">
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="https://www.flaticon.es/svg/static/icons/svg/919/919851.svg"/>
-                        </div>
-                        <h2>React-JS</h2>
-                        <p>Cuento con capacidad de crear, migrar, diseñar y maketar en react cualquier proyecto de la web, utilizando buenas prácticas, con conocimientos que van desde el uso de componentes de clase hasta el uso de componentes funcionales con hooks.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/color/144/000000/redux.png"/>    
-                        </div>
-                        <h2>Redux</h2>
-                        <p>Integración de React con el store de redux, soy completamente capaz de utilizar estados locales de componentes o el store de redux si el proyecto así lo requiere, intento implementarlo en mis proyectos cada vez más, según los estándares y documentación.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/321/full/reactrouter.png"/>      
-                        </div>
-                        <h2>React-Router</h2>
-                        <p class="fz-menor">Ya que me enfoque en React intente he intento implementar poco a poco el stack completo, manejar rutas en SPAs o PWAs con react router, conociendo las ventajas y desventajas que se te tiene frente a otras opciones como nextjs y demás, me enfoco más en las rutas de react, para ser más a fin a la libreria.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon ">
-                            <img src="https://www.flaticon.es/svg/static/icons/svg/919/919831.svg"/>      
-                        </div>
-                        <h2>SASS</h2>
-                        <p>En entornos más profesionales seguro se implementará un preprocesador de css en vez del css puro, opte por aprender sass porque me pareció el más completo, a futuro lo implementare con style-components, pero a mediano plazo puedo utilizar sass como preprocesador de estilos. </p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="https://www.flaticon.es/svg/static/icons/svg/919/919825.svg"/>      
-                        </div>
-                        <h2>Node-JS</h2>
-                        <p>Cuento con conocimientos en node y su administrador de paquetes, para crear configuraciones desde 0 a los proyectos de react, para utilizar código de JavaScript reciente, configuración de preprocesadores de estilos como SASS, crear REST APIs con JavaScript y más.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTEhOjXELAUFhfiLywko9Qr7rVGucxio8Oa1nN05OUiYdU07pNYG1n0v7N_jXe5jhDoblEu074LJlrY0cn6YvSSfKeswC-HIC9Iog&usqp=CAU&ec=45702845"/>      
-                        </div>
-                        <h2>Express</h2>
-                        <p class="fz-menor">Al enfocarme en la Web tuve que aprender a consumir datos de diferentes APIs, así que pasado un tiempo entendí el cómo estaban construidas y que tecnologías se usaban, aprendí a manejar express, aunque no es fuerte intento no dejarlo de lado, conozco autenticación JWT, encriptación de contraseñas con bcript etc.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon ">
-                            <img src="https://img.favpng.com/25/1/22/microsoft-sql-server-database-microsoft-corporation-application-software-png-favpng-vTJVuHCzMsyVhv07AjTXMqwh7.jpg"/>      
-                        </div>
-                        <h2>Mssql-server</h2>
-                        <p class="fz-menor">Tengo conocimiento intermedio en administración de bases de datos relacionales, aprendí en mssql-server pero puedo adaptarme a otras, conocimientos en diseño y optimización de DBS, procesos, vistas, procedimientos almacenados, etc. Cabe resaltar que tengo bases para funcionar en otros entornos como DBA.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon ">
-                            <img src="https://www.flaticon.es/svg/static/icons/svg/919/919832.svg"/>      
-                        </div>
-                        <h2>Type-Script</h2>
-                        <p class="fz-menor">Aunque no es común que se implemente type-script en servidores, me parece una forma óptima de sostener el código a través del tiempo a parte de las características que le da a javascript, dado que vengo de lenguajes como c++ y java que son de tipado fuerte y demás características que lo hacen amigable a mi parecer.</p>
-                    </div>
-                </div>
+            <div class="projects-img">
+              <img src="./images/screenProyecto3.png" alt="img_p3" />
             </div>
-        </section>
-        <!-- end service section -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects section -->
 
-
-        <!-- About seccion -->
-        <section id="about">
-            <div class="about container">
-                <div class="col-right">
-                    <h1 class="section-title">Sobre <span>Mi</span> </h1>
-                    <h2>Desarrollador web</h2>
-                    <p>Mi nombre completo es Luis Eduardo Gamez Maldonado, nací el 12 de mayo del 2001 en Fundación- Magdalena, soy apasionado por la tecnología y el desarrollo de software, soy estudiante de ingeniería de sistemas en la universidad del magdalena, ubicada en Santa Marta Colombia, curso 6to semestre. Desde enero de 2019 incursioné en la web, aunque en la universidad aprendí programación estructurada en c++, estructuras de datos y demás, luego aprendí POO en java. 
-                    </p>
-                    <p>
-                    En ese tiempo un monitor me contacto y me hizo seguimiento porque “le gustaba como trabajaba el código y la idea que tenía para programar”... Digamos que fue quien me presento de lleno ante el mundo del desarrollo web. De ahí en adelante mis ganas de aprender y con mi capacidad autodidacta, ley, practiqué, seguí guías... Etc, todo lo necesario para entender cómo funcionaba la web, comencé a utilizar javascript como lenguaje principal. Una vez aprendi lo basico de la web, comenzaron a introducir conceptos como frameworks, librerias, entornos etc. Consulté a el monitor y me recomendó reactjs, entonces mi siguiente paso fue empezar en react, aprendí en un nivel intermedio a manejar componentes de clases, componentes funcionales, estados, propiedades, ciclos de vida, componentes presentacionales e inteligentes y lo que más pude, luego poco a poco fui integrando react con redux, implementando rutas y demas. Luego comencé a ver base de datos en la universidad y me pareció curioso como consultar esos datos desde un cliente de react, entonces comencé a aprender el funcionamiento de APIs, principalmente con el mismo lenguaje javascript en node, consumiendo de la base de datos que creaba en mssql-server en el curso de base de datos de la universidad. 
-                    </p>
-                    <p>
-                    Así a grandes rasgos aprendí el stack listado anteriormente en servicios, no estoy cerrado a un framework, ni a un tipo base de datos en especial, así como la tecnología avanza quienes la utilizamos debemos adaptarnos y no dejar de aprender, es así entonces que estoy abierto a otras opciones que me nutran como desarrollador web para escalar en mi experiencia.  
-                    </p>
-                    <!-- <a href="#" class="cta">Download Resume</a> -->
-                </div>
+    <!-- service section -->
+    <section id="services">
+      <div class="services container">
+        <div class="service-top">
+          <h1 class="section-title">Serv<span>i</span>cios</h1>
+          <p>
+            Los servicios que puedo ofrecer son más que todo enfocados al
+            front-end especialmente en el uso de react como libreria, pero
+            también con conocimiento en creación de APIs y conexion con las
+            mismas, me considero de nivel Junior hasta la fecha no cuento
+            experiencia alguna, pero con toda la motivación y el empeño de
+            aprender en el menor tiempo lo que me soliciten, a continuación
+            listare los servicios o conocimientos con los que cuento (El stack
+            con el que tengo afinidad y complementos):
+          </p>
+        </div>
+        <div class="service-bottom">
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/react.png?alt=media&token=bd85e97c-9367-4c32-8625-8bee4458c665"
+              />
             </div>
-        </section>
-        <!-- End About seccion -->
-
-
-        <!-- Contact section -->
-
-        <section id="contact">
-            <div class="contact container">
-                <div>
-                    <h1 class="section-title">Contacto <span>info</span></h1>
-                </div>
-                <div class="contact-items">
-                    <div class="contact-item">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="">
-                        </div>
-                        <div class="contact-info">
-                            <h1>whatsapp</h1>
-                            <h2>+57 300 217 37 34</h2>
-                            <h2>+57 317 809 45 61</h2>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="">
-                        </div>
-                        <div class="contact-info">
-                            <h1>Email</h1>
-                            <h2>gamezluis797@gmail.com</h2>
-                            <h2>gamezluis777@gmail.com</h2>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="">
-                        </div>
-                        <div class="contact-info">
-                            <h1>Ubicación</h1>
-                            <h2>Fundación</h2>
-                            <h2>Magdalena/Colombia</h2>
-                        </div>
-                    </div>
-                </div>
+            <h2>React-JS</h2>
+            <p>
+              Cuento con capacidad de crear, migrar, diseñar y maketar en react
+              cualquier proyecto de la web, utilizando buenas prácticas, con
+              conocimientos que van desde el uso de componentes de clase hasta
+              el uso de componentes funcionales con hooks.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/redux.png?alt=media&token=c9e060a5-0e25-495e-8f8c-afc5eeca8026" />
             </div>
-        </section>
-        <!-- End Contact section -->
-
-        <!-- Footer -->
-
-        <section id="footer">
-            <div class="footer container">
-                <div class="brand">
-                    <h1> <span>L</span>uis <span>E</span>duardo <span>G</span>amez <span>M</span>aldonado</h1>
-                </div>
-                <p>Agradecimiento a Angel Laguna(mentor y compañero), Ernesto Galvis(profesor de bases de datos UNIMAG), fazt-web(Full-stack web youtuber), Leonidas Esteban(Front-end youtuber),  por ser referentes que le aportan a mi formación.</p>
-                <div class="social-icon">
-                    <div class="social-item">
-                        <a target="_blank" href="https://www.facebook.com/luisegm.gamezm/">
-                            <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="facebook">
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a target="_blank" href="https://github.com/LuisEGM">
-                            <img src="https://img.icons8.com/bubbles/100/000000/github.png"/>
-                        </a>
-                    </div>
-                </div>
-                <p>Atribucion de plantilla a <strong>WEB CIFAR</strong></p>
+            <h2>Redux</h2>
+            <p>
+              Integración de React con el store de redux, soy completamente
+              capaz de utilizar estados locales de componentes o el store de
+              redux si el proyecto así lo requiere, intento implementarlo en mis
+              proyectos cada vez más, según los estándares y documentación.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/reactrouter.png?alt=media&token=ec327f4b-29fa-4d20-b211-23764fa4efd0"
+              />
             </div>
+            <h2>React-Router</h2>
+            <p class="fz-menor">
+              Ya que me enfoque en React intente he intento implementar poco a
+              poco el stack completo, manejar rutas en SPAs o PWAs con react
+              router, conociendo las ventajas y desventajas que se te tiene
+              frente a otras opciones como nextjs y demás, me enfoco más en las
+              rutas de react, para ser más a fin a la libreria.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/sass.png?alt=media&token=07a3fae3-8689-45ba-9c8f-f56f7e4d3ee2"
+              />
+            </div>
+            <h2>SASS</h2>
+            <p>
+              En entornos más profesionales seguro se implementará un
+              preprocesador de css en vez del css puro, opte por aprender sass
+              porque me pareció el más completo, a futuro lo implementare con
+              style-components, pero a mediano plazo puedo utilizar sass como
+              preprocesador de estilos.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/nodejs.png?alt=media&token=09487912-1500-4dfe-95fd-6f9d67e3db2c"
+              />
+            </div>
+            <h2>Node-JS</h2>
+            <p>
+              Cuento con conocimientos en node y su administrador de paquetes,
+              para crear configuraciones desde 0 a los proyectos de react, para
+              utilizar código de JavaScript reciente, configuración de
+              preprocesadores de estilos como SASS, crear REST APIs con
+              JavaScript y más.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/spring.png?alt=media&token=b28b3156-fccd-4fd6-8f85-ca8bd2c34c92"
+              />
+            </div>
+            <h2>Spring</h2>
+            <p class="fz-menor">
+              Al enfocarme en la Web tuve que aprender a consumir datos de
+              diferentes APIs, así que pasado un tiempo entendí el cómo estaban
+              construidas y que tecnologías se usaban, aprendí a manejar
+              spring, para desarrollar API REST, conectando con Dbs como MySql y MongoDB.
+              Ademas de conectar estas APIs usando microservicios en contenedores.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/sqlserver.png?alt=media&token=5aa18a8d-ddc2-4b28-83fb-da1131993691"
+              />
+            </div>
+            <h2>Mssql-server</h2>
+            <p class="fz-menor">
+              Tengo conocimiento intermedio en administración de bases de datos
+              relacionales, aprendí en mssql-server pero puedo adaptarme a
+              otras, conocimientos en diseño y optimización de DBS, procesos,
+              vistas, procedimientos almacenados, etc. Cabe resaltar que tengo
+              bases para funcionar en otros entornos como DBA.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/luisgamez-portafolio.appspot.com/o/java.png?alt=media&token=afb17012-34a1-418e-b735-432a2eb1e9e1"
+              />
+            </div>
+            <h2>Java</h2>
+            <p class="fz-menor">
+                Java como lenguaje por exelencia para el desarrollo de servidores, cuento con el conocimiento suficiente para desarrollar en este lenguaje usando buenas practicas de programación, implementación de pruebas unitarias en el código realizado y aplicando patrones de diseño y diferentes arquitecturas. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end service section -->
 
-        </section>
-        <!-- End Footer -->
+    <!-- About seccion -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-right">
+          <h1 class="section-title">Sobre <span>Mi</span></h1>
+          <h2>Desarrollador web</h2>
+          <p>
+            Mi nombre completo es Luis Eduardo Gamez Maldonado, nací el 12 de
+            mayo del 2001 en Fundación- Magdalena, soy apasionado por la
+            tecnología y el desarrollo de software, soy estudiante de ingeniería
+            de sistemas en la universidad del magdalena, ubicada en Santa Marta
+            Colombia, curso 6to semestre. Desde enero de 2019 incursioné en la
+            web, aunque en la universidad aprendí programación estructurada en
+            c++, estructuras de datos y demás, luego aprendí POO en java.
+          </p>
+          <p>
+            En ese tiempo un monitor me contacto y me hizo seguimiento porque
+            “le gustaba como trabajaba el código y la idea que tenía para
+            programar”... Digamos que fue quien me presento de lleno ante el
+            mundo del desarrollo web. De ahí en adelante mis ganas de aprender y
+            con mi capacidad autodidacta, ley, practiqué, seguí guías... Etc,
+            todo lo necesario para entender cómo funcionaba la web, comencé a
+            utilizar javascript como lenguaje principal. Una vez aprendi lo
+            basico de la web, comenzaron a introducir conceptos como frameworks,
+            librerias, entornos etc. Consulté a el monitor y me recomendó
+            reactjs, entonces mi siguiente paso fue empezar en react, aprendí en
+            un nivel intermedio a manejar componentes de clases, componentes
+            funcionales, estados, propiedades, ciclos de vida, componentes
+            presentacionales e inteligentes y lo que más pude, luego poco a poco
+            fui integrando react con redux, implementando rutas y demas. Luego
+            comencé a ver base de datos en la universidad y me pareció curioso
+            como consultar esos datos desde un cliente de react, entonces
+            comencé a aprender el funcionamiento de APIs, principalmente con el
+            mismo lenguaje javascript en node, consumiendo de la base de datos
+            que creaba en mssql-server en el curso de base de datos de la
+            universidad.
+          </p>
+          <p>
+            Así a grandes rasgos aprendí el stack listado anteriormente en
+            servicios, no estoy cerrado a un framework, ni a un tipo base de
+            datos en especial, así como la tecnología avanza quienes la
+            utilizamos debemos adaptarnos y no dejar de aprender, es así
+            entonces que estoy abierto a otras opciones que me nutran como
+            desarrollador web para escalar en mi experiencia.
+          </p>
+          <!-- <a href="#" class="cta">Download Resume</a> -->
+        </div>
+      </div>
+    </section>
+    <!-- End About seccion -->
+
+    <!-- Contact section -->
+
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contacto <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/phone.png"
+                alt=""
+              />
+            </div>
+            <div class="contact-info">
+              <h1>whatsapp</h1>
+              <h2>+57 300 217 37 34</h2>
+              <h2>+57 317 809 45 61</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+                alt=""
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>gamezluis797@gmail.com</h2>
+              <h2>gamezluis777@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+                alt=""
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Ubicación</h1>
+              <h2>Fundación</h2>
+              <h2>Magdalena/Colombia</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact section -->
+
+    <!-- Footer -->
+
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1>
+            <span>L</span>uis <span>E</span>duardo <span>G</span>amez
+            <span>M</span>aldonado
+          </h1>
+        </div>
+        <p>
+          Agradecimiento a Angel Laguna(mentor y compañero), Ernesto
+          Galvis(profesor de bases de datos UNIMAG), fazt-web(Full-stack web
+          youtuber), Leonidas Esteban(Front-end youtuber), por ser referentes
+          que le aportan a mi formación.
+        </p>
+        <div class="social-icon">
+          <div class="social-item">
+            <a target="_blank" href="https://www.facebook.com/luisegm.gamezm/">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
+                alt="facebook"
+              />
+            </a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://github.com/LuisEGM">
+              <img src="https://img.icons8.com/bubbles/100/000000/github.png" />
+            </a>
+          </div>
+        </div>
+        <p>Atribucion de plantilla a <strong>WEB CIFAR</strong></p>
+      </div>
+    </section>
+    <!-- End Footer -->
 
     <script src="app.js"></script>
-    </body>
+  </body>
 </html>
