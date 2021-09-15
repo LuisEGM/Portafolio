@@ -247,7 +247,7 @@ p{
 /* Hero section */
 
 #hero{
-    background-image: url(./images/hero-bg.jpg);
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/luis-gamez-portafolio.appspot.com/o/images-portafolio%2Fhero-bg.jpg?alt=media&token=8e3dbb35-51dc-466d-8416-3ddd4feb5e00");
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -358,7 +358,7 @@ p{
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
-    background-image: url(./images/img-1.png);
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/luis-gamez-portafolio.appspot.com/o/images-portafolio%2Fimg-1.png?alt=media&token=37992f97-4b28-49cc-89a9-98368ffd834e");
     background-size: cover;
     margin: 10px 5%;
     position: relative;
